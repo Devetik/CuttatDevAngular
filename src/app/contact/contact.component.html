@@ -1,0 +1,41 @@
+<form class="m-3 pb-5 w-50">
+  <p>
+      <label for="prenom">Prénom</label>
+      <input type="text" name="prenom" id="prenom" class="form-control">
+  </p>
+  <p>
+      <label for="email" class="form-label">Email</label>
+      <input type="email" name="email" id="email" class="form-control" readonly value="admin@cuttat-dev.com">
+  </p>
+  <p>
+      <label for="pays">Pays</label>
+      <select type="text" name="pays" id="pays" class="form-select">
+          <option value="Suisse">Suisse</option>
+          <option value="France">France</option>
+          <option value="Belgique">Belgique</option>
+      </select>
+  </p>
+  <p>
+      <label for="fichier" class="form-file-label">Photo</label>
+      <input type="file" name="fichier" class="form-control">
+  </p>
+  <p class="form-check">
+      <input type="checkbox" name="mode_sombre" class="form-check-input" id="mode_sombre">
+      <label for="mode_sombre" aria-checked="form-check-label">Mode sombre</label>
+  </p>
+  <p class="form-check form-switch">
+      <input type="checkbox" name="mode_sombre_switch" class="form-check-input" id="mode_sombre_switch">
+      <label for="mode_sombre_switch" aria-checked="form-check-label">Mode sombre</label>
+  </p>
+  <div class="input-group">
+      <span class="input-group-text">
+          Vos motivations ?
+      </span>
+      <textarea class="form-control"></textarea>
+  </div>
+  <button type="button" class="btn btn-primary mt-5">
+    Envoyer
+  </button>
+</form>
+{{dateService.date | date:'long'}}<br>
+{{dateService.getDate() | date:'long'}}

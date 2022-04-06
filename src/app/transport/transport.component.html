@@ -1,0 +1,25 @@
+<form class="m-3 pb-5 w-50">
+  <p>
+      <label for="depart">Départ</label>
+      <input type="text" name="depart" id="depart" class="form-control">
+  </p>
+  <p>
+    <label for="destination">Déstination</label>
+    <input type="text" name="destination" id="destination" class="form-control">
+</p>
+
+  <p>
+      <label for="pays">Pays</label>
+      <select type="text" name="pays" id="pays" class="form-select">
+          <option value="Suisse">Suisse</option>
+          <option value="France">France</option>
+          <option value="Belgique">Belgique</option>
+      </select>
+  </p>
+
+  <button type="button" class="btn btn-primary mt-5" (click)="correspondance()">
+    Chercher correspondance
+  </button>
+</form>
+
+{{trainData | json}}

@@ -1,0 +1,11 @@
+<app-maintenance></app-maintenance>
+<form [formGroup]="userForm">
+  <input formControlName="name">
+  <input formControlName="email">
+  <button (click)="showForm()">Submit</button>
+</form>
+
+<input [formControl]="userInput">
+
+Test: {{ userInput.value }}
+
